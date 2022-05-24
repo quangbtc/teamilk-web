@@ -1,0 +1,88 @@
+:root {
+  --border-radius: 5px;
+}
+.wrapper {
+  min-width: 100px;
+  border: 1px solid transparent;
+  cursor: pointer;
+  &:hover {
+    opacity: 0.7;
+  }
+}
+.wrapper {
+  margin: 10px;
+}
+//type button
+.primary {
+  border-radius: var(--border-radius);
+  color: var(--white-color);
+  background-color: var(--primary-color);
+  min-width: 120px;
+  height: 36px;
+  font-size: 18px;
+  line-height: 25px;
+  font-weight: 600;
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  padding: 6px 8px;
+}
+.outline {
+  @extend .primary;
+  border-radius: var(--border-radius);
+  background-color: var(--white-color);
+  color: var(--primary-color);
+  border-color: var(--primary-color);
+}
+.text {
+  @extend.primary;
+  background-color: transparent;
+  border: none;
+  color: var(--text-color);
+  text-decoration: underline;
+}
+//Size = medium,large,small
+.medium {
+  min-width: 120px;
+  padding: 6px 8px;
+  font-size: 1.6rem;
+  line-height: 22px;
+  font-weight: 600;
+}
+.small {
+  min-width: 88px;
+  padding: 0 10px;
+  height: 28px;
+  font-size: 1.4rem;
+  line-height: 22px;
+  font-weight: 600;
+}
+.large {
+  min-width: 200px;
+  padding: 10px 18px;
+  font-size: 2rem;
+  line-height: 22px;
+  height: 48px;
+  font-weight: 600;
+}
+//disable when click
+.disabled {
+  pointer-events: none;
+  opacity: 0.5;
+  user-select: none;
+}
+//rounded
+.rounded {
+  border-radius: 999px;
+}
+//Icon
+.icon {
+  display: inline-block;
+  width: 22px;
+}
+
+.icon + .title,
+.title + .icon {
+  margin-left: 8px;
+}
