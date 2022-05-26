@@ -3,3 +3,14 @@
   z-index: 1;
   margin-top: 109px;
 }
+.btn-view-more {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--white-color);
+}
+.wp-feature-product {
+  max-height: 1072px;
+  overflow: hidden;
+  margin-bottom: 20px;
+}

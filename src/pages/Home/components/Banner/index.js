@@ -1,10 +1,8 @@
 import classNames from "classnames/bind";
 import styles from "./Banner.module.scss";
 
-import { faTruckPlane } from "@fortawesome/free-solid-svg-icons";
 import Img from "~/components/Img";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import Button from "~/components/Button";
+
 const cx = classNames.bind(styles);
 function Banner() {
   return (

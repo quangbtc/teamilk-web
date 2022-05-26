@@ -1,5 +1,4 @@
 import Button from "~/components/Button";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {} from "@fortawesome/free-solid-svg-icons";
 import { menu } from "~/DumpData/dataMenu";
 

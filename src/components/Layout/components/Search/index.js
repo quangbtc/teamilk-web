@@ -7,7 +7,6 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import TippyHeadless from "@tippyjs/react/headless";
 import { Wrapper as WrapperPopper } from "~/components/Popper";
-import { dataSearchProducts } from "~/DumpData/dataProducts";
 import SearchItem from "./SearchItem";
 import * as productServices from "~/apiServices/productServices";
 import { useDebounce } from "~/hooks";
