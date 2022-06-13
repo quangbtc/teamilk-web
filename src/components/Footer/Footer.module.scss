@@ -1,0 +1,39 @@
+.wrapper {
+  background-image: linear-gradient(-90deg, #eee, black);
+}
+.inner {
+  margin: 0px 120px;
+  padding: 20px 0px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.wrapper-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+
+  .text-title {
+    color: white;
+    font-size: 2.4rem;
+  }
+  .contact-item {
+    cursor: pointer;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    .contact-text {
+      margin: 10px;
+      color: white;
+      &:hover {
+        color: lightblue;
+      }
+    }
+    .contact-icon {
+      margin-right: 10px;
+      font-size: 1.8rem;
+      color: white;
+    }
+  }
+}

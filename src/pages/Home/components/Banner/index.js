@@ -4,20 +4,14 @@ import styles from "./Banner.module.scss";
 import Img from "~/components/Img";
 
 const cx = classNames.bind(styles);
-function Banner() {
+function Banner({ post }) {
   return (
     <div className={cx("wrapper")}>
       <div className={cx("wrapper-title")}>
-        <h3 className={cx("head-title")}>Trà sữa truyền thống</h3>
-        <p className={cx("sologan")}>
-          Bỏ ai cũng được nhưng không bỏ được trà sữa.
-        </p>
+        <h3 className={cx("head-title")}>{post.title}</h3>
+        <p className={cx("sologan")}>{post.sologan}</p>
       </div>
-      <Img
-        src="https://toigingiuvedep.vn/wp-content/uploads/2021/11/background-tra-sua-doc-dao-ngot-lim-cho-tin-do-me-tra-sua.jpg"
-        className={cx("image-banner")}
-        alt="banner"
-      />
+      <Img src={post.image} className={cx("image-banner")} alt="banner" />
     </div>
   );
 }

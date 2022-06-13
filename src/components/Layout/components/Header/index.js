@@ -95,10 +95,11 @@ function Header() {
           </div>
         ) : (
           <div className={cx("right-content")}>
-            <Button type="text" size="small">
+            <Button to="/register" type="text" size="small">
               Đăng ký
             </Button>
             <Button
+              to="/login"
               type="primary"
               size="small"
               rightIcon={<FontAwesomeIcon icon={faSignIn} />}

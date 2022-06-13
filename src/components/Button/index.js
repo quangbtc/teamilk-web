@@ -41,10 +41,8 @@ function Button({
   let Comp = "button";
   if (props.to) {
     Comp = Link;
-    props.to = "to";
   } else if (props.href) {
     Comp = "a";
-    props.href = "href";
   }
   return (
     <Comp className={classNames} {...props}>
